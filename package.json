@@ -1,10 +1,11 @@
 {
   "name": "youtube-webhook",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Webhook that gets the latest video from a channel and send an embed on Discord with infos about it",
   "main": "app.js",
   "scripts": {
-    "start": "pm2 start ecosystem.json"
+    "start": "npx pm2 start ecosystem.json --attach",
+    "stop": "npx pm2 stop all && npx pm2 delete all"
   },
   "author": "",
   "license": "ISC",
